@@ -1,6 +1,6 @@
 FROM resin/rpi-node
 
-RUN apt-get update && apt-get install -y dropbear
+RUN apt-get update && apt-get install -y dropbear usbutils wireless-tools
 
 ADD start /start
 ADD src/ /src
