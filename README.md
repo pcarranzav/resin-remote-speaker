@@ -45,11 +45,11 @@ Copy that ID, then go to the Syncthing GUI on your Raspberry Pi, click on Add De
 After that, on the Pi GUI select Add Folder, name it "src" and point it to the /src directory.
 Select your PC as a device to share it with.
 
-![Add Folder](../../blob/master/doc/show-id.png)
+![Add Folder](../../blob/master/doc/add-folder.png)
 
 When you do this, the GUI on your PC will prompt you to add the device too:
 
-![Add Folder](../../blob/master/doc/new-device.png)	
+![New device](../../blob/master/doc/new-device.png)	
 
 Now create the folder on the GUI on your PC, using the same ID ("src"), but point it to the src directory in this repository (e.g. "/home/user/resin-starter-kit/src").
 
