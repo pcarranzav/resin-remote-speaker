@@ -8,7 +8,9 @@ Resin container that allows to quickly get hacking on a Raspberry Pi.
 It features:
 - SSH using dropbear
 - File syncing using syncthing
-- Dependencies for node.js or Python
+- Dependencies for node.js and a running express server
+
+A similar container, but for Python instead of node.js, can be found [here](https://github.com/pcarranzav/resin-starter-kit-python).
 
 Usage
 ------
@@ -53,17 +55,5 @@ Now create the folder on the GUI on your PC, using the same ID ("src"), but poin
 
 Voilà! Now every change you make on your src directory will be immediately reflected on the Pi. That way you can code and run it on the Pi, and only push to resin after adding new dependencies or making big changes.
 
-### Python or node.js
-
-This repo has dependencies installed for Python or node depending on what branch you use. Branch master has the node version, so if you want to use Python do:
-```
-git checkout python
-```
-And then to deploy with resin, instead of the default command do:
-```
-git push resin python:master
-```
-
-All sources should be put inside the src folder so that syncthing can do its thing while you're hacking.
 
  
