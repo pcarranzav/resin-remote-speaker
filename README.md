@@ -1,5 +1,5 @@
-resin-starter-kit
-=================
+Resin Starter Kit for node.js
+=============================
 
 NOTE: This container enables SSH access as root with a PASSWORD stored in plain text - Do not use in production without modifications.
 
