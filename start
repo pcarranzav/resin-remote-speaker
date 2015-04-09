@@ -1,7 +1,9 @@
 #!/bin/bash
 
 # Make sudo actually work
-hostname raspberrypi2
+HOSTNAME=$(cat /etc/hostname)
+echo "127.0.1.1 $HOSTNAME" >> /etc/hosts
+hostname $HOSTNAME
 
 # Echo the syncthing ID to the terminal
 #echo < syncthingID.txt
