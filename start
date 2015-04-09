@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Make sudo actually work
+hostname raspberrypi2
+
 # Echo the syncthing ID to the terminal
 #echo < syncthingID.txt
 if [ ! -d /data/syncthingHome ]; then
