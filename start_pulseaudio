@@ -1,0 +1,2 @@
+#!/bin/bash
+/usr/bin/pulseaudio --start --log-level=debug --log-target=stderr --system=false
