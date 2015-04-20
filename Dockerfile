@@ -15,6 +15,11 @@ RUN chmod a+x /start_pulseaudio
 
 RUN cd /src && npm install
 
+RUN sed -i -e "s@#enable-dbus=yes@enable-dbus=no@" -e "s@#host-name=foo@host-name=$(echo raspberrypi2 | cut -c1-7)@" /etc/avahi/avahi-daemon.conf
+
+RUN useradd -m -G audio pi
+
 EXPOSE 8080
+EXPOSE 53
 
 CMD bash /start

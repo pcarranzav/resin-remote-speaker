@@ -23,7 +23,7 @@ echo "root:$PASSWD" | chpasswd
 cd src && node index.js &
 
 modprobe snd_bcm2835
-adduser pi audio
+avahi-daemon -D
 su pi -c start_pulseaudio
 
 #Spawn dropbear
