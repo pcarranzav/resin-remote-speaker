@@ -24,7 +24,7 @@ cd src && node index.js &
 
 modprobe snd_bcm2835
 avahi-daemon -D
-su pi -c start_pulseaudio
+su pi -c /start_pulseaudio
 
 #Spawn dropbear
 dropbear -E -F

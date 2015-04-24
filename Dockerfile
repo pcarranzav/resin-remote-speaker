@@ -1,6 +1,8 @@
 FROM nghiant2710/systemd-init-image
 
-RUN apt-get update && apt-get install -y dropbear usbutils wireless-tools sudo pulseaudio pulseaudio-module-zeroconf alsa-utils libasound2-dev
+RUN apt-get update && apt-get install -y dropbear usbutils wireless-tools sudo pulseaudio pulseaudio-module-zeroconf alsa-utils libasound2-dev curl
+RUN curl -sL https://deb.nodesource.com/setup | bash -
+RUN apt-get install -y build-essential nodejs
 
 ADD start /start
 ADD start_pulseaudio /start_pulseaudio
