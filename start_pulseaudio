@@ -1,2 +1,3 @@
 #!/bin/bash
+echo "Starting pulseaudio..."
 /usr/bin/pulseaudio --start --log-target=stderr

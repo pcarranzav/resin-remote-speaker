@@ -8,6 +8,7 @@ ADD start /start
 ADD start_pulseaudio /start_pulseaudio
 ADD src/ /src
 ADD syncthing-linux-arm-v0.10.30.tar.gz /
+ADD default.pa /etc/pulse/
 RUN mv syncthing-linux-arm-v0.10.30 syncthing
 
 #RUN /syncthing/syncthing -generate="/syncthing/syncthingHome"
