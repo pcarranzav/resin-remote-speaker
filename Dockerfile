@@ -1,4 +1,4 @@
-FROM resin/rpi-node
+FROM nghiant2710/systemd-init-image
 
 RUN apt-get update && apt-get install -y dropbear usbutils wireless-tools sudo pulseaudio pulseaudio-module-zeroconf alsa-utils libasound2-dev
 
